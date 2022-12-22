@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Shubham Kushwaha
+% Based off of: https://github.com/EricLiclair/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\graphicspath{ {./images/} }
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\setlength{\footskip}{4.08003pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+% \begin{left}
+    % \begin{wrapfigure}{r}{0.2\textwidth}
+    %     {\vspace*{-0.07\textwidth}\includegraphics[width=0.2\textwidth]{images/logo.png}}
+    % \end{wrapfigure}
+    {\Huge \scshape Shirsha Sengupta} \\ \vspace{1pt}
+    Jamshedpur, Jharkhand, 831002 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 8210688300 ~ \href{mailto:shirsha.sengupta.iiitranchi@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{shirsha.sengupta.iiitr@gmail.com}} ~
+    \href{https://www.linkedin.com/in/shizzzzzzz7/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/shizzzzzzz7}}  ~
+    \href{https://github.com/Shizzzzzzz7}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/shizzzzzzz7}}\
+    \href{https://leetcode.com/Shizzzzzzz7/}{\underline{leetcode.com/shizzzzzzz7}}\
+    \href{https://codeforces.com/profile/Shizzzzzzz7}{\underline{codeforces.com/profile/shizzzzzzz7}}
+    \href{https://www.codechef.com/users/shizzzzzzz7}{\underline \texttt{\underline {codechef.com/users/shizzzzzzz7}}}
+    \vspace{-8pt}
+% \end{left}
+
+% \begin{wrapfigure}{r}{0.4\linewidth}
+%     \includegraphics[width=\linewidth]{images/profile.png}
+% \end{wrapfigure}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Ranchi}{Dec. 2021 -- Present}
+      {B. Tech. in \textbf{Electronics and Communications Engineering} (CGPA 8.77)}{Ranchi, Jharkhand}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Data Structures
+%                 \item Algorithms Analysis
+%                 \item Advanced Algorithms
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Business Development Intern}{Mar 2021 -- May 2021}
+      {\href{https://yourfirstad.com/index.html}{yourFirstAd}}{Dhanbad, Remote}
+      \resumeItemListStart
+        \resumeItem{Studied \textbf{Market Psychology} and made strategy based on that to get high growth in the \textbf{Ad-Tech space}.}
+        \resumeItem{\textbf{Leaded} the team for on boarding \textbf{Media Personals} and on boarded top Media Personals by cracking good deals for them.}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        
+      
+      
+        \resumeProjectHeading
+          {{{\textbf{ADV-EEG Device}}} $|$ \emph{C++, Python, IoT, Machine Learning}}{Sept 2022}
+          \resumeItemListStart
+            \resumeItem{An \textbf{IoT device} which fetches \textbf{EEG signals} from the brain through a \textbf{Low Noise OP-AMP} \& amplify it.}
+            \resumeItem{The Device can predict the current mental state of any individual.}
+            \resumeItem{The Project also got a funding of \textbf{Rs.15 Lakhs} .}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+          \resumeProjectHeading
+      {{ {\textbf{i-Farming}}} $|$ \emph{C++, IoT, Cloud}}{Feb 2022}
+      \resumeItemListStart
+        \resumeItem{An \textbf{IoT based model} used for \textbf{digitization} of agriculture.}
+        \resumeItem{Consist of \textbf{Rover} which was integrated with useful \textbf{Digital and Analog Sensors}.}
+        \resumeItem{The \textbf{Ultrasonic Sensor} played an important role in retaining the \textbf{fertility of the soil by 99\%} .} 
+        \resumeItem{By this digitization farmers would achieve an \textbf{exponential} growth in their \textbf{ROI}.} 
+      \resumeItemListEnd
+      \vspace{-13pt}
+
+
+      \resumeProjectHeading
+          {{{{\textbf{To-Do List}}}} $|$ \emph{NodeJS, Express, MongoDB, Mongoose, HTML, CSS, JavaScript}}{Jul 2022}
+          \resumeItemListStart
+            \resumeItem{Built a responsive To-Do List Web App using \textbf{HTML}, \textbf{CSS} and \textbf{JavaScript}.}
+            \resumeItem{Backend was built wit \textbf{NodeJS} and \textbf{Express}.}
+            \resumeItem{For database used \textbf{NoSQL MongoDB} and \textbf{mongoose ODM} .}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/firebaseChatapp}{\raisebox{0.0\height}\faLink\ {\textbf{Chat App}}} $|$ \emph{Firebase( Auth, Realtime Database, Hosting), React, AntDesign}}{Aug 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{A Web application developed using \textbf{React}, \textbf{AntdDesign} and \textbf{Firebase} with Authentication.}
+        %     \resumeItem{The application provides an interface for users to chat one-to-one, and also provides a list of all users (online and offline) to select from.}
+        %   \resumeItemListEnd
+          \vspace{13pt}
+
+        % \resumeProjectHeading
+        %   {\href{https://github.com/EricLiclair/testapi}{\raisebox{0.0\height}\faLink\ {\textbf{Test API}}} $|$ \emph{Django, Django Rest Framework, drf-yasg, Token Auth, Redoc}}{Jun 2021}
+        %   \resumeItemListStart
+        %     \resumeItem{Developed a concept of API containing the details of the students of institute to be used by the students.}
+        %     \resumeItem{Exposes an \textbf{endpoint to generate token} which can be exchanged over other endpoints of the API to access the students database.}
+        %     \resumeItem{Implemented \textbf{role based authorization} using \textbf{generic and hybrid API Views}.}
+        %   \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%-----------RESEARCH-----------
+\section{Research/Achievements}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{National Creativity Olympiad}{2015}{An Open Domain Competition conducted by \textbf{The Institution of Engineers}.}{\textbf{AIR 1}}
+        
+
+        \resumeSubheading{National Creativity Olympiad}{2016}{A Direct Domain Competition conducted by \textbf{The Institution of Engineers}.}{\textbf{AIR 2}}
+
+
+        \resumeSubheading{International Space Olympiad}{2019}{International Level Olympiad conducted every year.}{\textbf{AIR 2}}
+
+
+        \resumeSubheading{ADV-EEG Device}{Ongoing}{A Device that can predict the current mental state of any individual.}{\href{https://www.linkedin.com/in/dr-shalini-mahato-734177181/}{Dr. Shalini Mahato, IIIT Ranchi}}
+
+        % \resumeSubheading{Google Developer Groups}{Jun 2021 -- Present}{Organizer}{Ranchi}
+        %     \resumeItemListStart
+        %         \resumeItem{Coordinating with the Lead in hosting events for Developers across various Google technologies and products.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, JavaScript, C, HTML, CSS} \\
+     \textbf{Developer Tools}{: VS Code, Chrome DevTools} \\
+     \textbf{Technologies/Frameworks}{: Git, GitHub, React, NodeJS, Express, MongoDB, React, Mongoose, jQuery, Raspberry Pi, Arduino} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+
+    \resumeSubHeadingListStart
+        \resumeSubheading{Technical Coordinator}{Jul 2022 -- Present}{House of Geeks, Technical Society}{IIIT Ranchi}
+            \resumeItemListStart
+                \resumeItem{\textbf{Planned}, \textbf{Sketched} \& now \textbf{Heading} the \textbf{first} ever \textbf{TechFest} of IIIT Ranchi.}
+                \resumeItem{Planned out \& implemented the smooth functioning \& smooth management of the Technical Society.}
+                \resumeItem{Organized hackathons, workshops and speaker sessions on various in demand technologies and skills.}
+            \resumeItemListEnd
+            
+        \resumeSubheading{IoT Coordinator}{Oct 2022 -- Present}{IoT Wing, House of Geeks, Technical Society}{IIIT Ranchi}
+            \resumeItemListStart
+                \resumeItem{\textbf{Revived} the IoT Community and currently managing \textbf{300+ students}.}
+                \resumeItem{Organized hackathons, workshops and speaker sessions on various in demand technologies and skills.}
+            \resumeItemListEnd
+
+
+    \resumeSubHeadingListEnd
+
+
+\end{document}
